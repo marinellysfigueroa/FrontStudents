@@ -13,8 +13,6 @@
             <div class="col-sm-4"></div>
         </div>
     </div>
-
-
     <div class="panel-body">
         <table class="table table-hover table-sm" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
             <thead class="thead-light">
@@ -37,7 +35,6 @@
         </table>
     </div>
 </div>
-lista {{studentlist}} Modal {{isupdated}}
 <div class="modal" id="myModal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -45,11 +42,8 @@ lista {{studentlist}} Modal {{isupdated}}
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title" style="text-align: center">Modificar estudiante</h4>
-
                 </div>
-
                 <!-- Modal body -->
-
                 <div class="modal-body" *ngFor="let student of studentlist ">
                     <div [hidden]="isupdated">
 
